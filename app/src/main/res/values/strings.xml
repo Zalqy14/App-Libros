@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Libros App</string>
+    <string name="tiutloPantallaPrincipal">Biblioteca Libros</string>
 </resources>
