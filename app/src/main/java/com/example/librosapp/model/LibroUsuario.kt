@@ -6,6 +6,16 @@ enum class EstadoLectura {
     LEIDO
 }
 
+// Libros que vienen de la api de Google y no son elegidos aun por el usuario
+data class LibroBusqueda(
+    val volumeId: String,
+    val titulo: String,
+    val autor: String,
+    val paginas: Int,
+    val descripcion: String
+)
+
+// Libros elegidos por el usuario
 data class LibroUsuario(
     // Datos del libro (vienen de Google Books)
     // EL volumeId viene con letras numero Entonces no puede ser ni int ni long de la API

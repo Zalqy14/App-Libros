@@ -12,13 +12,6 @@ class BusquedaLibros : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_busqueda_libros)
 
-        data class Libro(
-            val volumenId: Int,
-            val titulo: String,
-            val autor: String,
-            val imagen: Int,
-            val descripcion: String
-        )
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
